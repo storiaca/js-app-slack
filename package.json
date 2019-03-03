@@ -1,0 +1,43 @@
+{
+  "name": "js-app-slack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "server:watch": "npx nodemon ./server.js",
+    "css:build": "npx postcss ./src/public/css/main.css -o ./dist/main.css",
+    "css:watch": "npx postcss --watch ./src/public/css/main.css -o ./dist/main.css",
+    "webpack:release": "npx webpack -p",
+    "webpack:watch": "npx webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/storiaca/js-app-slack.git"
+  },
+  "keywords": [
+    "Vanilla",
+    "js",
+    "slack",
+    "application"
+  ],
+  "author": "Aleksandar Ristic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/storiaca/js-app-slack/issues"
+  },
+  "homepage": "https://github.com/storiaca/js-app-slack#readme",
+  "dependencies": {
+    "express": "4.16.4"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "3.2.0",
+    "jest": "24.1.0",
+    "nodemon": "1.18.10",
+    "postcss": "7.0.14",
+    "postcss-cli": "6.1.2",
+    "postcss-import": "12.0.1",
+    "webpack": "4.29.6",
+    "webpack-cli": "3.2.3"
+  }
+}
